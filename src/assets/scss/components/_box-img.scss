@@ -1,0 +1,16 @@
+.box-image {
+  max-width: 860px;
+  &__caption {
+    max-width: 73%;
+    font-size: 16px;
+    font-family: $font-secondary;
+    font-weight: $font-semibold;
+    color: $color-primary;
+    line-height: 26px;
+    margin-top: 3.7rem;
+    margin-bottom: 3.7rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-left: 3px solid $color-secondary;
+  }
+}

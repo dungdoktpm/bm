@@ -1,0 +1,14 @@
+.text {
+  font-family: $font-primary;
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+&--img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+}

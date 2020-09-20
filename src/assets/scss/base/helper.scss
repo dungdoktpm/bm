@@ -1,0 +1,175 @@
+.text-center {
+  text-align: center;
+}
+
+//padding
+.p-0 {
+  padding: 0 !important;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pr-50 {
+  padding-right: 5rem;
+}
+.pb-20 {
+  padding-bottom: 2rem;
+}
+.pl-20 {
+  padding-left: 2rem;
+}
+.p-15 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+//margin
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.m-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.mb-30 {
+  margin-bottom: 3rem;
+  @include media("<=tablet") {
+    margin-bottom: 1.5rem;
+  }
+}
+.mt-30 {
+  margin-top: 3rem;
+}
+.mt-40 {
+  margin-top: 4rem;
+}
+.mt-50 {
+  margin-top: 5rem;
+}
+.mt-70 {
+  margin-top: 7rem;
+}
+.mt-100 {
+  margin-top: 10rem;
+}
+.mt-115 {
+  margin-top: 11.5rem;
+}
+.mt-120 {
+  margin-top: 12rem;
+}
+.mt-160 {
+  margin-top: 16rem;
+}
+.mr-52 {
+  margin-right: 5.2rem;
+}
+.mr-30 {
+  margin-right: 3rem !important;
+}
+.mb-60 {
+  margin-bottom: 6rem;
+}
+.mb-24 {
+  margin-bottom: 2.4rem;
+}
+.mb-20 {
+  margin-bottom: 2rem;
+}
+.mb-10 {
+  margin-bottom: 1rem;
+}
+.mb-40 {
+  margin-bottom: 4rem;
+}
+.mb-50 {
+  margin-bottom: 5rem;
+}
+.mb-55 {
+  margin-bottom: 5.5rem;
+}
+.mb-100 {
+  margin-bottom: 10rem;
+}
+.mb-120 {
+  margin-bottom: 12rem;
+}
+.mb-130 {
+  margin-bottom: 13rem;
+}
+.m-90 {
+  margin: 9rem 0;
+}
+
+
+
+//color
+.text-white {
+  color: $color-light !important;
+}
+.dark {
+  color: $color-dark !important;
+}
+.primary {
+  color: $color-primary !important;
+}
+.secondary {
+  color: $color-secondary !important;
+}
+
+//text
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-dark {
+  color: $color-dark !important;
+}
+
+.text-color-secondary {
+  color: #ACACAC !important;
+}
+.text-desc {
+  font-size: 16px;
+  font-family: $font-secondary;
+  color: $color-primary;
+  line-height: 26px;
+}
+.bold {
+  font-weight: $font-bold;
+}
+
+//img
+.img-cover {
+  width: 100%;
+  object-fit: cover;
+}
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+// algin
+.algin-self-center {
+  align-self: center;
+}
+// center
+.center {
+  text-align: center;
+}
+
+
+
+
+

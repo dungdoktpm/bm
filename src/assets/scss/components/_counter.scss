@@ -1,0 +1,24 @@
+.counter {
+  display: inline-block;
+  &__number {
+    font-size: 48px;
+    font-weight: $font-light ;
+    font-family:$font-secondary;
+    color: #555555;
+    font-weight: $font-light;
+    letter-spacing: 0.5rem;
+  }
+  &__title {
+    font-size: 12px;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    letter-spacing: 0.2rem;
+  }
+
+  & hr {
+    width: 30%;
+    margin: 0 auto;
+  }
+}

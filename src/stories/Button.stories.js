@@ -4,18 +4,19 @@ export default {
   title: 'Components/Button',
 };
 
-export const Primary = () => {
+export const BntSubmit = () => {
   return /* html */ `
-    <button class="btn">
-      Button Primary
-    </button>
+    <button class="btn btn-submit">SUBMIT</button>
   `;
 };
 
-export const Secondary = () => {
+export const BntSearch = () => {
   return /* html */ `
-    <button class="btn btn--secondary">
-      Button Secondary
-    </button>
+  <div class="search">
+    <div class="search__main">
+      <input type="text" class="search__text" placeholder="Search...">
+      <a href="" class="search__btn btn"><i class="pe-7s-search"></i></a>
+    </div>
+</div>
   `;
 };

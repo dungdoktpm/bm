@@ -1,0 +1,64 @@
+.gallery {
+  position: relative;
+  margin-bottom: 3rem;
+  &__img img{
+    width: 100%;
+  }
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4rem 2rem 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+  }
+  &__text--top {
+    font-family: $font-primary;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    margin-bottom: 1.2rem;
+  }
+
+  &__text--bottom {
+    font-family: $font-secondary;
+    font-size: 14px;
+
+  }
+  .divider {
+    @include pos-center;
+    z-index: 1;
+  }
+  &__icon {
+    font-size: 40px;
+    color: $color-secondary;
+    i {
+      float: right;
+    }
+  }
+  .overlay {
+    @include bg-overlay;
+    opacity: 0;
+  }
+}
+
+.gallery--small {
+  @media (min-width: 1024px) {
+    max-width: 313px;
+  }
+}
+// hover gallery
+.gallery:hover .gallery__content{
+    opacity: 1;
+}
+
+.gallery:hover{
+  .overlay {
+    opacity: 0.7;
+    visibility: visible;
+    z-index: 0;
+  }
+}

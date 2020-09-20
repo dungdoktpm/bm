@@ -1,0 +1,42 @@
+.comment {
+  max-width: 65rem;
+  margin: 3.2rem auto;
+  border-bottom: 0.5px solid rgba($color: #707070, $alpha:0.3);
+  &__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+  &__user-name {
+    font-family: $font-primary;
+    font-size: 12px;
+    font-weight: $font-bold;
+    letter-spacing: 0.1rem;
+    margin-left: 2rem;
+  }
+  &__content, &__time {
+    font-family: $font-secondary;
+    font-weight: $font-regular;
+    color:$color-primary ;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      font-size: 12px;
+      font-family: $font-primary;
+      color: $color-primary;
+    }
+  }
+  &__time {
+    font-size: 12px;
+    color: rgba($color: $color-primary, $alpha: 0.7)
+  }
+}
+
+.comment--rep {
+  max-width: 57rem;
+}

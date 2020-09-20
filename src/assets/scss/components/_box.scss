@@ -1,0 +1,217 @@
+// .box {
+//   padding-right: 10px;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   padding-left: 1.5rem;
+//     padding-right: 1.5rem;
+//   @media (min-width: 768px) {
+//     flex-direction: row;
+//   }
+//   &__img {
+//     width: 100%;
+//     margin-bottom: 2rem;
+//     @media (min-width: 768px) {
+//       width: 50%;
+//     }
+//   }
+//   &__main {
+//     width: 100%;
+//     @media (min-width: 768px) {
+//       width: 50%;
+//     }
+//   }
+//   &__title {
+//     font-size: 22px;
+//     font-weight: bold;
+//     color: black;
+//     margin-bottom: 5rem;
+//     font-family: $font-primary;
+//     letter-spacing: 0.2rem;
+//     & span {
+//       color:$color-secondary;
+//     }
+//     @media (min-width:768px) {
+//       font-size: 36px;
+//     }
+//   }
+//   &__desc {
+//     font-size: 16px;
+//     font-weight: $font-normal;
+//     font-family: $font-secondary;
+//     color: $color-primary;
+//     line-height: 26px;
+//     }
+
+// }
+// // box--intro01
+// .box--intro {
+//   .box__title {
+//     margin-bottom: 2.5rem;
+//   }
+//   .box__desc {
+//     font-size: 18px;
+//     line-height: 26px;
+//     letter-spacing: 0.1rem;
+//     color: #000;
+//     font-weight: bold;
+//   }
+// }
+// .box--small {
+//   max-width: 92rem !important;
+//   align-items: center;
+//   .box__img {
+//     width: 100%;
+//     @media (min-width:768px) {
+//       width: 14.67%
+//     }
+//   }
+//   .box__main {
+//     flex: 1;
+//   }
+// }
+
+// //box-intro02
+// .box {
+//   &--large {
+//     position: relative;
+//     @media (min-width:992px) {
+//       .box__img {
+//         padding-right: 10rem;
+//       }
+//       .divider {
+//         @include pos-center;
+//       }
+//       .box__info {
+//         transform: translate(-25%, 65%);
+//       }
+//       .box__text {
+//         transform: translateY(90%);
+//       }
+//     }
+//     .box__img img {
+//       width: 100%;
+//     }
+//     .box__title {
+//       margin-bottom: 2rem;
+//       white-space: nowrap;
+//     }
+//   }
+
+//   &__text p {
+//     font-family: $font-secondary;
+//     color: $color-primary;
+//     font-weight: $font-semibold;
+//     line-height: 26px;
+//     letter-spacing: 0.5px;
+//   }
+//   &__text &__name-user {
+//     font-weight: $font-bold;
+//     color: $color-dark;
+//     letter-spacing: 0.2px;
+//     margin-top: -20px;
+//   }
+
+// }
+
+//form
+.content .form {
+  max-width: 520px;
+  &__item {
+    font-size: 16px;
+    font-family: $font-secondary;
+    border: 1px solid #C7C7C7;
+    border-radius: 30px;
+    position: relative;
+  }
+  &__item input{
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    background: none;
+    line-height: 26px;
+    width: 100%;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .btn--subcribe {
+    color: $color-secondary;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $font-primary;
+    font-weight: $font-semibold;
+    padding: 1rem 2rem;
+    background: none;
+    margin: auto;
+    letter-spacing: .3rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+  }
+}
+
+.box__img {
+  &--small {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.content--icon {
+  span {
+    font-size: 12px;
+    font-family: $font-primary;
+    margin-top: 2rem;
+    font-weight: $font-semibold;
+    display: inline-block;
+  }
+}
+.content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5rem;
+    font-family: $font-primary;
+    letter-spacing: 0.2rem;
+    & span {
+      color:$color-secondary;
+    }
+    @media (min-width:768px) {
+      font-size: 36px;
+    }
+  }
+  &__desc {
+    font-size: 12px;
+    font-weight: $font-normal;
+    font-family: $font-secondary;
+    color: $color-primary;
+    line-height: 26px;
+    @media (min-width:768px) {
+      font-size: 16px;
+    }
+  }
+  &--subcribe {
+    max-width: 650px;
+  }
+}
+
+.content--small {
+  .content__title {
+    margin-bottom: 2.5rem;
+  }
+
+  .content__desc {
+    font-weight: $font-semibold;
+    color: $color-dark;
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    @media (min-width:768px) {
+      font-size: 18px;
+    }
+  }
+}

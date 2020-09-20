@@ -1,0 +1,103 @@
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width:100%;
+    @include media('<=tablet') {
+      padding: 5px;
+    }
+}
+
+.row {
+  margin-left: auto ;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media (min-width:768px) {
+    flex-direction: row;
+  }
+}
+
+
+.col-desk-12 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.col-desk-10 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 83.33%;
+  }
+}
+
+.col-desk-11 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 91.67%;
+  }
+}
+.col-desk-9 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 75%;
+  }
+}
+.col-desk-7 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 58.33%;
+  }
+}
+.col-desk-6 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+.col-desk-5 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 41.67%;
+  }
+}
+.col-desk-4 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 33.33%;
+  }
+}
+.col-desk-3 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 25%;
+  }
+}
+
+.col-desk-2 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 16.67%;
+  }
+}
+
+.col-desk-1 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 8.33%;
+  }
+}
+
+.col-tab-6 {
+  width: 100%;
+  @media (min-width:768px) and (max-width: 991.98px) {
+    width: 50%;
+  }
+}
+
+

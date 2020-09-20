@@ -1,0 +1,35 @@
+.breadcrumb {
+    display: flex;
+    font-family: $font-secondary;
+    background-color: none;
+    &__item {
+      position: relative;
+    }
+    &__item::after {
+      content: '/';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+    }
+
+    &__item a {
+      display: block;
+      padding: 5px 20px;
+      font-size: $font-size-primary;
+      color: $color-dark;
+      font-family: $font-secondary;
+      text-align: center;
+      font-weight: $font-semibold;
+    }
+    & li.active a {
+      color: $color-secondary !important;
+    }
+}
+
+ol.breadcrumb .breadcrumb__item:last-child::after {
+  content:'';
+}
+ol.breadcrumb .breadcrumb__item:first-child a {
+  padding-left: 0;
+}
