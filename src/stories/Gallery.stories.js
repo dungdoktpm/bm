@@ -27,9 +27,9 @@ export const Gallery = () => {
           <div class="divider">
             <img src="${divider03}" alt="" class=" divider--diagonal"/>
           </div>
-          <span class="gallery__icon">
+          <a href="" class="gallery__icon">
             <i class="pe-7s-play"></i>
-          </span>
+          </a>
         </div>
       </a>
     </div>

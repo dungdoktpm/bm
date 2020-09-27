@@ -40,41 +40,40 @@ export const ContactForm = () => {
   </div>
   <div class="contact-info">
     <div class="step-form">
-    <div class="step">
+      <div class="step">
         <h4 class="step__title">
-            <span>Your name</span> <span>*</span>
-            <i class="fas fa-arrow-circle-right"></i>
+          <span>Your name</span> <span>*</span>
+          <i class="fas fa-arrow-circle-right"></i>
         </h4>
         <h4 class="step__title">
-            Your email<span> *</span>
+          Your email<span> *</span>
         </h4>
         <h4 class="step__title">
-            Message <span>*</span>
+          Message <span>*</span>
         </h4>
-    </div>
-  <div class="form">
-      <form action="">
+      </div>
+      <div class="form">
+        <form action="">
           <div class="form__field slide-page">
-              <input type="text" placeholder="Your name">
-              <a href="" class="step1"><i class="fas fa-arrow-circle-right icon-arrow"></i></a>
+            <input type="text" placeholder="Your name">
+            <a href="" class="step1"><i class="fas fa-arrow-circle-right icon-arrow"></i></a>
           </div>
           <div class="form__field">
-              <input type="text" placeholder="Your email">
-              <a href="" class="step2"><i class="fas fa-arrow-circle-right icon-arrow"></i></a>
+            <input type="text" placeholder="Your email">
+            <a href="" class="step2"><i class="fas fa-arrow-circle-right icon-arrow"></i></a>
           </div>
           <div class="form__field">
-              <input type="text" placeholder="Message">
-              <a href="" class="step3 submit"><i class="fas fa-arrow-circle-right icon-arrow"></i></a>
+            <input type="text" placeholder="Message">
+            <a href="" class="step3 submit"><i class="fas fa-arrow-circle-right icon-arrow"></i></a>
           </div>
-      </form>
-  </div>
-
-</div>
+        </form>
+      </div>
+    </div>
     <div class="row">
       <div class="col-mob-12 col-desk-6 left">
         <img src="https://picsum.photos/635/477" alt="">
         <a class="logo" href="#">
-          <img src="${logo02}" alt="logo"/>
+          <img src="${logo02}" alt="logo" />
         </a>
       </div>
       <div class="col-mob-12 col-desk-6">
@@ -85,7 +84,6 @@ export const ContactForm = () => {
           <p class="contact-info__desc">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Molestias inventore eius ducimus repellat soluta possimus
-
           </p>
           <div class="group-info address">
             <span class="icon--contact-info">

@@ -2,11 +2,12 @@
   'use-strict';
 
   function init() {
-    const buttonElement = document.querySelector('#button');
-    if (buttonElement) {
-      buttonElement.addEventListener('click', () => {
-        console.log('Javascript test');
+    const scrollToTop = document.querySelector('#btnTop');
+    if (scrollToTop) {
+      scrollToTop.addEventListener('click', function () {
+        window.scrollTo(0, 0);
       });
+      console.log('init');
     }
   }
 

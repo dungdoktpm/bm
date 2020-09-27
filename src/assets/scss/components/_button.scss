@@ -19,11 +19,8 @@
 
 // btn search
 .search {
-  // max-width: 240px;
-  // height: 40px;
-  position: relative;
+  position: absolute;
   &__main {
-    // position: absolute;
     display: inline-block;
     background: #000;
     border-radius: 30px;

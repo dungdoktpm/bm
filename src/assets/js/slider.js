@@ -1,33 +1,34 @@
-var mySwiper01 = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'vertical',
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-})
-
-var mySwiper02 = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
+//page home
+var swiper = new Swiper('.home .swiper-container', {
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
+});
+var swiper = new Swiper('.home-gallery .swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+});
+var swiper = new Swiper('.home-post .swiper-container', {
+  slidesPerView: 2,
+  spaceBetween: 50,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
-})
+});
+
+//page service
+var swiper = new Swiper('.service-slide .swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
 
 
 

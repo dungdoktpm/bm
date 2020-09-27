@@ -26,9 +26,9 @@
 @import "components/nav";
 @import "components/gallery";
 @import "components/box-img";
-@import "components/intro";
 @import "components/slider";
 @import "components/title";
+@import "components/select-box";
 
 /* 3. Fonts
 ======================================================================== */
@@ -37,3 +37,10 @@
 /* 4. Layout
 ======================================================================== */
 @import "layouts/grid";
+
+/* 5. Pages
+======================================================================== */
+@import "pages/home.scss";
+@import "pages/service.scss";
+@import "pages/contact.scss";
+@import "pages/portflio_detail";

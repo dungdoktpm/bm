@@ -16,724 +16,781 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- swiper slider -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <script src="https://kit.fontawesome.com/3ecac043a2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container">
-    <!-- header -->
-    <header class="header">
+  <div id="root">
+    <div class="wrapper">
       <div class="container">
-        <nav class="navbar">
-          <a class="logo" href="#">
-            <img src="./assets/images/BM.png" alt="logo" />
-          </a>
+        <!-- header -->
+        <header class="header mb-48">
+          <nav class="navbar">
+            <a class="logo" href="#">
+              <img src="./assets/images/BM.png" alt="logo" />
+            </a>
 
-          <button class="navbar__toggler btn--open ">
-            <i class="fas fa-bars"></i>
-          </button>
+            <button class="navbar__toggler btn--open">
+              <i class="fas fa-bars"></i>
+            </button>
 
-          <!--menu-->
-          <div class="navbar__collapse">
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">Home</a>
-              </li>
-              <li class="navbar__item">
-                <a href="" class="navbar__link">About</a>
-              </li>
-              <li class="navbar__item">
-                <a href="" class="navbar__link">Portfolio</a>
-              </li>
-              <li class="navbar__item">
-                <a href="blog.html" class="navbar__link">Blog</a>
-              </li>
-              <li class="navbar__item">
-                <a href="" class="navbar__link">Contact</a>
-              </li>
-            </ul>
-            <div class="search">
-              <div class="search__main">
-                <input type="text" class="search__text" placeholder="Search...">
-                <a href="" class="search__btn btn"><i class="pe-7s-search"></i></a>
+            <!--menu-->
+            <div class="navbar__collapse">
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <a href="index.html" class="navbar__link">Home</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="about.html" class="navbar__link">About</a>
+                  <!-- sub menu -->
+                  <ul class="sub-menu">
+                    <li><a href="service.html" class="sub-menu__link">Service</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="portfolio.html" class="navbar__link">Portfolio</a>
+                  <!-- sub menu -->
+                  <ul class="sub-menu">
+                    <li><a href="" class="sub-menu__link">Portflio Grid</a></li>
+                    <li><a href="" class="sub-menu__link">Portflio MasonrySingle Project</a></li>
+                    <li><a href="portfolio-detail.html" class="sub-menu__link">Portflio Detail</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="blog.html" class="navbar__link">Blog</a>
+                  <!-- sub menu -->
+                  <ul class="sub-menu">
+                    <li><a href="blog-single.html" class="sub-menu__link">Blog Single</a></li>
+                    <li><a href="blg-standard.html" class="sub-menu__link">Blog Standard</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="contact.html" class="navbar__link">Contact</a>
+                </li>
+              </ul>
+              <div class="search">
+                <div class="search__main">
+                  <input type="text" class="search__text" placeholder="Search...">
+                  <a href="" class="search__btn btn"><i class="pe-7s-search"></i></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!-- box intro -->
+        <section class="intro mt-160 mb-120 mx-auto">
+          <div class="row">
+            <div class="col-mob-12 col-desk-2">
+              <img src="./assets/images/avata05.png" alt="" class="box__img box__img--small">
+            </div>
+            <div class="col-mob-12 col-desk-10">
+              <div class="content content--intro content--small">
+                <h3 class="content__title">
+                  HI, MY NAME IS <span>RALPH BOWMAN. <span>
+                </h3>
+                <p class="content__desc mb0">
+                  I AM AN VIETNAMESE PRODUCT DESIGNER & PHOTOGRAPHY
+                </p>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- box intro -->
-    <section class="intro mt-160 mb-120 mx-auto">
-      <div class="row">
-        <div class="col-mob-12 col-desk-2">
-          <img src="./assets/images/avata05.png" alt="" class="box__img box__img--small">
-        </div>
-        <div class="col-mob-12 col-desk-10">
-          <div class="content content--intro content--small">
-            <h3 class="content__title">
-              HI, MY NAME IS <span>RALPH BOWMAN. <span>
-            </h3>
-            <p class="content__desc mb0">
-              I AM AN VIETNAMESE PRODUCT DESIGNER & PHOTOGRAPHY
-            </p>
+        </section>
+        <!-- slider 01-->
+        <section class="home">
+          <div class="row">
+            <div class="col-desk-12 col-mob-12">
+              <div>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slide__content background background--img background--large"
+                        style="background-image: url('./assets/images/slide.jpg');">
+                        <a href="" class="category uppercase">PHOTOGRAPHY</a>
+                        <div class="title title--home title--style01">
+                          <h2 class="title__heading uppercase">
+                            THIS MISTAKEN IDEA
+                          </h2>
+                          <p class="title__desc text-desc">
+                            On the other hand, we denounce with righteous indination and dislike men.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slide__content background background--img background--large"
+                        style="background-image: url('./assets/images/slide.jpg');">
+                        <a href="" class="category uppercase">PHOTOGRAPHY</a>
+                        <div class="title title--home title--style01">
+                          <h2 class="title__heading uppercase">
+                            THIS MISTAKEN IDEA
+                          </h2>
+                          <p class="title__desc text-desc">
+                            On the other hand, we denounce with righteous indination and dislike men.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slide__content background background--img background--large"
+                        style="background-image: url('./assets/images/slide.jpg');">
+                        <a href="" class="category uppercase">PHOTOGRAPHY</a>
+                        <div class="title title--home title--style01">
+                          <h2 class="title__heading uppercase">
+                            THIS MISTAKEN IDEA
+                          </h2>
+                          <p class="title__desc text-desc">
+                            On the other hand, we denounce with righteous indination and dislike men.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slide__content background background--img background--large"
+                        style="background-image: url('./assets/images/slide.jpg');">
+                        <a href="" class="category uppercase">PHOTOGRAPHY</a>
+                        <div class="title title--home title--style01">
+                          <h2 class="title__heading uppercase">
+                            THIS MISTAKEN IDEA
+                          </h2>
+                          <p class="title__desc text-desc">
+                            On the other hand, we denounce with righteous indination and dislike men.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+                <a href="" class="home__icon">
+                  <i class="pe-7s-play icon__play"></i>
+                </a>
+              </div>
+
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- slider 01-->
-    <section class="home">
-      <div class="slide">
-        <div class="slide__content background background--img background--large"
-          style="background-image: url('./assets/images/slide.jpg');">
-          <a href="" class="category uppercase">PHOTOGRAPHY</a>
-          <div class="title title--home title--style01">
-            <h2 class="title__heading uppercase">
-              THIS MISTAKEN IDEA
+        </section>
+        <!-- divider -->
+        <section class="m-90 center">
+          <div class="divider divider--vertical">
+            <img src="./assets/images/divider2.png" alt="" />
+          </div>
+        </section>
+        <section class="m-90">
+          <div class="title title--style02">
+            <h2 class="title__heading">
+              Latest Work
             </h2>
             <p class="title__desc text-desc">
-              On the other hand, we denounce with righteous indination and dislike men.
+              On the other hand, we denounce with righteous.
             </p>
           </div>
-        </div>
-        <div class="slide__content background background--img background--large"
-          style="background-image: url('https://picsum.photos/id/1/1298/720');">
-          <a href="" class="category uppercase">PHOTOGRAPHY</a>
-          <div class="title title--home title--style01">
-            <h2 class="title__heading uppercase">
-              THIS MISTAKEN IDEA
-            </h2>
-            <p class="title__desc text-desc">
-              On the other hand, we denounce with righteous indination and dislike men.
-            </p>
-          </div>
-        </div>
-        <div class="slide__content background background--img background--large"
-          style="background-image: url('https://picsum.photos/id/10/1298/720');">
-          <a href="" class="category uppercase">PHOTOGRAPHY</a>
-          <div class="title title--home title--style01">
-            <h2 class="title__heading uppercase">
-              THIS MISTAKEN IDEA
-            </h2>
-            <p class="title__desc text-desc text-white">
-              On the other hand, we denounce with righteous indination and dislike men.
-            </p>
-          </div>
-        </div>
-        <span class="home__icon">
-          <i class="pe-7s-play icon__play"></i>
-        </span>
-        <!-- dots  -->
-        <div class="dots-container">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </section>
-    <!-- divider -->
-    <section class="m-90 center">
-      <div class="divider divider--vertical">
-        <img src="./assets/images/divider2.png" alt="" />
-      </div>
-    </section>
-    <section class="m-90">
-      <div class="title title--style02">
-        <h2 class="title__heading">
-          Latest Work
-        </h2>
-        <p class="title__desc text-desc">
-          On the other hand, we denounce with righteous.
-        </p>
-      </div>
-    </section>
-    <!-- gallery fillter -->
-    <section class="home-gallery">
-      <div class="row">
-        <nav class="gallery-menu">
-          <ul>
-            <li class="gallery-menu__item active" data-filter="all">All</li>
-            <li class="gallery-menu__item" data-filter="nature">Nature</li>
-            <li class="gallery-menu__item" data-filter="drinkfood">Drink & Food</li>
-            <li class="gallery-menu__item" data-filter="garden">Garden</li>
-            <li class="gallery-menu__item" data-filter="animation">Animation</li>
-          </ul>
-        </nav>
-        <div class="gallery-container">
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="drinkfood">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img01.png" />
+        </section>
+        <!-- gallery fillter -->
+        <section class="home-gallery">
+          <div class="row">
+            <nav class="gallery-menu">
+              <ul>
+                <li class="gallery-menu__item" data-filter="all">All</li>
+                <li class="gallery-menu__item" data-filter="nature">Nature</li>
+                <li class="gallery-menu__item" data-filter="drinkfood">Drink & Food</li>
+                <li class="gallery-menu__item" data-filter="garden">Garden</li>
+                <li class="gallery-menu__item" data-filter="animation">Animation</li>
+              </ul>
+            </nav>
+            <div class="gallery-container">
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="drinkfood">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img01.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <a href="" class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </a>
+                    </div>
+                  </a>
                 </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="nature">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img02.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <a href="" class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </a>
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="animation">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img03.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <a href="" class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="nature">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img04.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <a href="" class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="drinkfood">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img05.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <a href="" class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="garden">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img06.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <a href="" class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="animation">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img07.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <a href="" class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="garden">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img08.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <span class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-desk-4 col-mob-12 p-15">
+                <div class="gallery gallery--small" data-filter="drink  food">
+                  <a href="">
+                    <div class="overlay"></div>
+                    <div class="gallery__img">
+                      <img src="./assets/images/img02.png" />
+                    </div>
+                    <div class="gallery__content">
+                      <div class="gallery__text">
+                        <h3 class="gallery__text--top uppercase text-white">
+                          DENOUNCING PLEASURE
+                        </h3>
+                        <p class="gallery__text--bottom text-white">
+                          Drink & Food
+                        </p>
+                      </div>
+                      <div class="divider">
+                        <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
+                      </div>
+                      <span class="gallery__icon">
+                        <i class="pe-7s-play"></i>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="nature">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img02.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
+        </section>
+        <!-- divider -->
+        <section class="m-90 center">
+          <div class="divider divider--vertical">
+            <img src="./assets/images/divider2.png" alt="" />
+          </div>
+        </section>
+        <!-- counters -->
+        <section class="center mb-130 mt-100">
+          <div class="row">
+            <div class="col-desk-4 col-mob-12">
+              <div class="counter">
+                <p class="counter__number">1052</p>
+                <h3 class="counter__title">
+                  happy clients
+                </h3>
+                <hr>
+              </div>
+            </div>
+            <div class="col-desk-4 col-mob-12">
+              <div class="counter">
+                <p class="counter__number">2120</p>
+                <h3 class="counter__title">
+                  project finished
+                </h3>
+                <hr>
+              </div>
+            </div>
+            <div class="col-desk-4 col-mob-12">
+              <div class="counter">
+                <p class="counter__number">1421</p>
+                <h3 class="counter__title">
+                  cups of coffee
+                </h3>
+                <hr>
+              </div>
             </div>
           </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="animation">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img03.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
+        </section>
+        <!-- slider 02 -->
+        <section class="home-gallery">
+          <div class="row">
+            <div class="col-desk-10 col-mob-12 mx-auto">
+              <div class="home-gallery__inner">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide fade">
+                      <img src="./assets/images/Clip.png" />
+                    </div>
+                    <div class="swiper-slide fade">
+                      <img src="https://picsum.photos/id/1/970/533" />
+                    </div>
+                    <div class="swiper-slide fade">
+                      <img src="https://picsum.photos/id/10/970/533" />
+                    </div>
+                    <div class="swiper-slide fade">
+                      <img src="https://picsum.photos/id/100/970/533" />
+                    </div>
+                    <div class="swiper-slide fade">
+                      <img src="https://picsum.photos/id/1000/970/533" />
+                    </div>
                   </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="nature">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img04.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="drinkfood">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img05.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="garden">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img06.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="animation">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img07.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="garden">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img08.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-12 p-15">
-            <div class="gallery gallery--small" data-filter="drink  food">
-              <a href="">
-                <div class="overlay"></div>
-                <div class="gallery__img">
-                  <img src="./assets/images/img02.png" />
-                </div>
-                <div class="gallery__content">
-                  <div class="gallery__text">
-                    <h3 class="gallery__text--top uppercase text-white">
-                      DENOUNCING PLEASURE
-                    </h3>
-                    <p class="gallery__text--bottom text-white">
-                      Drink & Food
-                    </p>
-                  </div>
-                  <div class="divider">
-                    <img src="./assets/images/divider.png" alt="" class=" divider--diagonal" />
-                  </div>
-                  <span class="gallery__icon">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- divider -->
-    <section class="m-90 center">
-      <div class="divider divider--vertical">
-        <img src="./assets/images/divider2.png" alt="" />
-      </div>
-    </section>
-    <!-- counters -->
-    <section class="center mb-130 mt-100">
-      <div class="row">
-        <div class="col-desk-4 col-mob-12">
-          <div class="counter">
-            <p class="counter__number">1052</p>
-            <h3 class="counter__title">
-              happy clients
-            </h3>
-            <hr>
-          </div>
-        </div>
-        <div class="col-desk-4 col-mob-12">
-          <div class="counter">
-            <p class="counter__number">2120</p>
-            <h3 class="counter__title">
-              project finished
-            </h3>
-            <hr>
-          </div>
-        </div>
-        <div class="col-desk-4 col-mob-12">
-          <div class="counter">
-            <p class="counter__number">1421</p>
-            <h3 class="counter__title">
-              cups of coffee
-            </h3>
-            <hr>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- slider 02 -->
-    <section class="home-gallery">
-      <div class="row">
-        <div class="col-desk-10 col-mob-12 mx-auto">
-          <div class="slide">
-            <div class="slide__content fade" style="display: block;">
-              <img src="./assets/images/Clip.png" />
-              <div class="number-page text-white"><span>01</span> / 05</div>
-            </div>
-            <div class="slide__content fade">
-              <img src="https://picsum.photos/id/1/970/533" />
-              <div class="number-page text-white"><span>02</span> / 05</div>
-            </div>
-            <div class="slide__content fade">
-              <img src="https://picsum.photos/id/10/970/533" />
-              <div class="number-page text-white"><span>03</span> / 05</div>
-            </div>
-            <div class="slide__content fade">
-              <img src="https://picsum.photos/id/100/970/533" />
-              <div class="number-page text-white"><span>04</span> / 05</div>
-            </div>
-            <div class="slide__content fade">
-              <img src="https://picsum.photos/id/1000/970/533" />
-              <div class="number-page text-white"><span>05</span> / 05</div>
-            </div>
-            <a class="btn-icon prev active">
-              <i class="pe-7s-play"></i>
-            </a>
-            <a class="btn-icon next">
-              <i class="pe-7s-play"></i>
-            </a>
-          </div>
-          <p class="home-gallery__desc text-desc center mx-auto">
-            Rainbow House Flower season is upcoming again Photography by © @albertdrosphotography
-          </p>
-          <a href="" class="category uppercase">
-            Gallery
-          </a>
-        </div>
-      </div>
 
-    </section>
-    <!-- divider -->
-    <section class="m-90 center">
-      <div class="divider divider--vertical">
-        <img src="./assets/images/divider2.png" alt="" />
-      </div>
-    </section>
-    <!-- text fill color -->
-    <section class="m-90">
-      <h3 class="text text--img" style="background-image: url('./assets/images/bg-text.jpg')">journal</h3>
-    </section>
-    <!-- slider 03 -->
-    <section class="home-post">
-      <div class="row">
-        <div class="col-desk-12 col-mob-12">
-          <div class="slide-container">
-            <div class="slide">
-              <div class="slide__content" style="display: block;">
-                <div class="row">
-                  <div class="col-desk-6 col-mob-12">
-                    <div class="blog">
-                      <!--date-->
-                      <div class="blog__time">
-                        <h3 class="blog__time--day">01</h3>
-                        <h4 class="blog__time--month">NOV</h4>
-                      </div>
-                      <!--blog-item-content-->
-                      <div class="blog__main">
-                        <div class="blog__img ">
-                          <div class="overlay"></div>
-                          <div class="aspect__img">
-                            <img src="./assets/images/blog1.png">
-                          </div>
-                          <div class="blog__title uppercase">
-                            <h4 class="blog__title--top">lifestyel</h4>
-                            <h3 class="blog__title--bottom">this mistaken idea</h3>
-                          </div>
-                          <span class="blog__icon">
-                            <i class="pe-7s-play icon__play"></i>
-                          </span>
-                        </div>
-                      </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination text-white"></div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button">
+                    <div class="swiper-button-next btn-icon next active">
+                      <i class="pe-7s-play"></i>
                     </div>
-                  </div>
-                  <div class="col-desk-6 col-mob-12">
-                    <div class="blog">
-                      <!--date-->
-                      <div class="blog__time">
-                        <h3 class="blog__time--day">01</h3>
-                        <h4 class="blog__time--month">NOV</h4>
-                      </div>
-                      <!--blog-item-content-->
-                      <div class="blog__main">
-                        <div class="blog__img ">
-                          <div class="overlay"></div>
-                          <div class="aspect__img">
-                            <img src="./assets/images/blog1.png">
-                          </div>
-                          <div class="blog__title uppercase">
-                            <h4 class="blog__title--top">lifestyel</h4>
-                            <h3 class="blog__title--bottom">this mistaken idea</h3>
-                          </div>
-                          <span class="blog__icon">
-                            <i class="pe-7s-play icon__play"></i>
-                          </span>
-                        </div>
-                      </div>
+                    <div class="swiper-button-prev btn-icon prev">
+                      <i class="pe-7s-play"></i>
                     </div>
                   </div>
                 </div>
+
+                <p class="home-gallery__desc text-desc center mx-auto">
+                  Rainbow House Flower season is upcoming again Photography by © @albertdrosphotography
+                </p>
+                <a href="" class="category uppercase">
+                  Gallery
+                </a>
               </div>
-              <!-- slider content -->
-              <div class="slide__content">
-                <div class="row">
-                  <div class="col-desk-6 col-mob-12">
-                    <div class="blog">
-                      <!--date-->
-                      <div class="blog__time">
-                        <h3 class="blog__time--day">01</h3>
-                        <h4 class="blog__time--month">NOV</h4>
+            </div>
+          </div>
+
+        </section>
+        <!-- divider -->
+        <section class="m-90 center">
+          <div class="divider divider--vertical">
+            <img src="./assets/images/divider2.png" alt="" />
+          </div>
+        </section>
+        <!-- text fill color -->
+        <section class="m-90">
+          <h3 class="text text--img" style="background-image: url('./assets/images/bg-text.jpg')">journal</h3>
+        </section>
+        <!-- slider 03 -->
+        <section class="home-post">
+          <div class="row">
+            <div class="col-desk-12 col-mob-12">
+              <div class="home-post__inner">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide fade">
+                      <div class="col-desk-12 col-mob-12">
+                        <div class="blog">
+                          <!--date-->
+                          <div class="blog__time">
+                            <h3 class="blog__time--day">01</h3>
+                            <h4 class="blog__time--month">NOV</h4>
+                          </div>
+                          <!--blog-item-content-->
+                          <div class="blog__main">
+                            <div class="blog__img ">
+                              <div class="overlay"></div>
+                              <div class="aspect__img">
+                                <img src="./assets/images/blog1.png">
+                              </div>
+                              <div class="blog__title uppercase">
+                                <h4 class="blog__title--top">lifestyel</h4>
+                                <h3 class="blog__title--bottom">this mistaken idea</h3>
+                              </div>
+                              <a href="" class="blog__icon">
+                                <i class="pe-7s-play icon__play"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <!--blog-item-content-->
-                      <div class="blog__main">
-                        <div class="blog__img ">
-                          <div class="overlay"></div>
-                          <div class="aspect__img">
-                            <img src="./assets/images/blog2.png">
+                    </div>
+                    <div class="swiper-slide fade">
+                      <div class="col-desk-12 col-mob-12">
+                        <div class="blog">
+                          <!--date-->
+                          <div class="blog__time">
+                            <h3 class="blog__time--day">01</h3>
+                            <h4 class="blog__time--month">NOV</h4>
                           </div>
-                          <div class="blog__title uppercase">
-                            <h4 class="blog__title--top">lifestyel</h4>
-                            <h3 class="blog__title--bottom">this mistaken idea</h3>
+                          <!--blog-item-content-->
+                          <div class="blog__main">
+                            <div class="blog__img ">
+                              <div class="overlay"></div>
+                              <div class="aspect__img">
+                                <img src="./assets/images/blog2.png">
+                              </div>
+                              <div class="blog__title uppercase">
+                                <h4 class="blog__title--top">lifestyel</h4>
+                                <h3 class="blog__title--bottom">this mistaken idea</h3>
+                              </div>
+                              <a href="" class="blog__icon">
+                                <i class="pe-7s-play icon__play"></i>
+                              </a>
+                            </div>
                           </div>
-                          <span class="blog__icon">
-                            <i class="pe-7s-play icon__play"></i>
-                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide fade">
+                      <div class="col-desk-12 col-mob-12">
+                        <div class="blog">
+                          <!--date-->
+                          <div class="blog__time">
+                            <h3 class="blog__time--day">01</h3>
+                            <h4 class="blog__time--month">NOV</h4>
+                          </div>
+                          <!--blog-item-content-->
+                          <div class="blog__main">
+                            <div class="blog__img ">
+                              <div class="overlay"></div>
+                              <div class="aspect__img">
+                                <img src="./assets/images/blog3.png">
+                              </div>
+                              <div class="blog__title uppercase">
+                                <h4 class="blog__title--top">lifestyel</h4>
+                                <h3 class="blog__title--bottom">this mistaken idea</h3>
+                              </div>
+                              <a href="" class="blog__icon">
+                                <i class="pe-7s-play icon__play"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide fade">
+                      <div class="col-desk-12 col-mob-12">
+                        <div class="blog">
+                          <!--date-->
+                          <div class="blog__time">
+                            <h3 class="blog__time--day">01</h3>
+                            <h4 class="blog__time--month">NOV</h4>
+                          </div>
+                          <!--blog-item-content-->
+                          <div class="blog__main">
+                            <div class="blog__img ">
+                              <div class="overlay"></div>
+                              <div class="aspect__img">
+                                <img src="./assets/images/blog4.png">
+                              </div>
+                              <div class="blog__title uppercase">
+                                <h4 class="blog__title--top">lifestyel</h4>
+                                <h3 class="blog__title--bottom">this mistaken idea</h3>
+                              </div>
+                              <a href="" class="blog__icon">
+                                <i class="pe-7s-play icon__play"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide fade">
+                      <div class="col-desk-12 col-mob-12">
+                        <div class="blog">
+                          <!--date-->
+                          <div class="blog__time">
+                            <h3 class="blog__time--day">01</h3>
+                            <h4 class="blog__time--month">NOV</h4>
+                          </div>
+                          <!--blog-item-content-->
+                          <div class="blog__main">
+                            <div class="blog__img ">
+                              <div class="overlay"></div>
+                              <div class="aspect__img">
+                                <img src="./assets/images/blog5.png">
+                              </div>
+                              <div class="blog__title uppercase">
+                                <h4 class="blog__title--top">lifestyel</h4>
+                                <h3 class="blog__title--bottom">this mistaken idea</h3>
+                              </div>
+                              <a href="" class="blog__icon">
+                                <i class="pe-7s-play icon__play"></i>
+                              </a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-desk-6 col-mob-12">
-                    <div class="blog">
-                      <!--date-->
-                      <div class="blog__time">
-                        <h3 class="blog__time--day">01</h3>
-                        <h4 class="blog__time--month">NOV</h4>
-                      </div>
-                      <!--blog-item-content-->
-                      <div class="blog__main">
-                        <div class="blog__img ">
-                          <div class="overlay"></div>
-                          <div class="aspect__img">
-                            <img src="./assets/images/blog2.png">
-                          </div>
-                          <div class="blog__title uppercase">
-                            <h4 class="blog__title--top">lifestyel</h4>
-                            <h3 class="blog__title--bottom">this mistaken idea</h3>
-                          </div>
-                          <span class="blog__icon">
-                            <i class="pe-7s-play icon__play"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
-              <!--  -->
-              <div class="slide__content">
-                <div class="row">
-                  <div class="col-desk-6 col-mob-12">
-                    <div class="blog">
-                      <!--date-->
-                      <div class="blog__time">
-                        <h3 class="blog__time--day">01</h3>
-                        <h4 class="blog__time--month">NOV</h4>
-                      </div>
-                      <!--blog-item-content-->
-                      <div class="blog__main">
-                        <div class="blog__img ">
-                          <div class="overlay"></div>
-                          <div class="aspect__img">
-                            <img src="./assets/images/blog3.png">
-                          </div>
-                          <div class="blog__title uppercase">
-                            <h4 class="blog__title--top">lifestyel</h4>
-                            <h3 class="blog__title--bottom">this mistaken idea</h3>
-                          </div>
-                          <span class="blog__icon">
-                            <i class="pe-7s-play icon__play"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+          </div>
+        </section>
+        <!-- divider -->
+        <section class="mb-100 mt-120 center">
+          <div class="divider divider--horizontal">
+            <img src="./assets/images/divider1.png" alt="" />
+          </div>
+        </section>
+        <!-- subcribe -->
+        <section>
+          <div class="row">
+            <div class="col-desk-6 col-mob-12">
+              <img src="./assets/images/subcribe.jpg" alt="">
+            </div>
+            <div class="col-desk-6 col-mob-12 algin-self-center">
+              <div class="content content--subcribe">
+                <h3 class="content__title">
+                  I’m <span>Ralph Bowman. <span>
+                </h3>
+                <p class="content__desc mb-55">
+                  "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                  in culpa qui officia deserunt mollitia animi”
+                </p>
+                <form class="form form--subcribe">
+                  <div class="form__item">
+                    <input type="text" placeholder="Email" />
+                    <button class="btn btn--subcribe">Subcribe</button>
                   </div>
-                  <div class="col-desk-6 col-mob-12">
-                    <div class="blog">
-                      <!--date-->
-                      <div class="blog__time">
-                        <h3 class="blog__time--day">01</h3>
-                        <h4 class="blog__time--month">NOV</h4>
-                      </div>
-                      <!--blog-item-content-->
-                      <div class="blog__main">
-                        <div class="blog__img ">
-                          <div class="overlay"></div>
-                          <div class="aspect__img">
-                            <img src="./assets/images/blog3.png">
-                          </div>
-                          <div class="blog__title uppercase">
-                            <h4 class="blog__title--top">lifestyel</h4>
-                            <h3 class="blog__title--bottom">this mistaken idea</h3>
-                          </div>
-                          <span class="blog__icon">
-                            <i class="pe-7s-play icon__play"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
-            <!-- dots  -->
-            <div class="dots-container">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- divider -->
-    <section class="mb-100 mt-120 center">
-      <div class="divider divider--horizontal">
-        <img src="./assets/images/divider1.png" alt="" />
-      </div>
-    </section>
-    <!-- subcribe -->
-    <section>
-      <div class="row">
-        <div class="col-desk-6 col-mob-12">
-          <img src="./assets/images/subcribe.jpg" alt="">
-        </div>
-        <div class="col-desk-6 col-mob-12 algin-self-center">
-          <div class="content content--subcribe">
-            <h3 class="content__title">
-              I’m <span>Ralph Bowman. <span>
-            </h3>
-            <p class="content__desc mb-55">
-              "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque corrupti quos dolores et quas
-              molestias excepturi sint occaecati cupiditate non provident, similique sunt
-              in culpa qui officia deserunt mollitia animi”
-            </p>
-            <form class="form form--subcribe">
-              <div class="form__item">
-                <input type="text" placeholder="Email" />
-                <button class="btn btn--subcribe">Subcribe</button>
+        </section>
+        <!-- footer -->
+        <section>
+          <div class="row">
+            <div class="col-desk-12 col-mob-12">
+              <div class="footer background background--img background--center"
+                style="background-image: url('./assets/images/bg-footer.png')">
+                <a class="logo" href="#">
+                  <img src="./assets/images/BM02.png" alt="logo" />
+                </a>
+                <nav class="navbar--light">
+                  <ul class="navbar__list">
+                    <li class="navbar__item">
+                      <a href="" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="" class="navbar__link">Portfolio</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="" class="navbar__link">Blog</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="" class="navbar__link">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-desk-12 col-mob-12">
-            <div class="footer background background--img background--center"
-              style="background-image: url('./assets/images/bg-footer.png')">
-              <a class="logo" href="#">
-                <img src="./assets/images/BM02.png" alt="logo" />
-              </a>
-              <nav class="navbar--light">
-                <ul class="navbar__list">
-                  <li class="navbar__item">
-                    <a href="" class="navbar__link">Home</a>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="" class="navbar__link">About</a>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="" class="navbar__link">Portfolio</a>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="" class="navbar__link">Blog</a>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="" class="navbar__link">Contact</a>
-                  </li>
-                </ul>
-              </nav>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
+  </div>
+
+
+  <!-- author  -->
+  <div class="author">
+    <p>RALPH BOWMAN</p>
+  </div>
+  <!-- scroll to top -->
+  <div class="scroll">
+    <div class="scrollTop mt-50" id="btnTop" onclick=topClick()>
+      <a href="" title="To top" class="scrollTop__text">SCROLL TO TOP</a>
+      <i class="pe-7s-download"></i>
+    </div>
+  </div>
+
+  <!-- copyright -->
+  <div class="copyright">
+    <p>
+      COPYRIGHT 2014 BY <span>WILOKE</span>
+    </p>
+  </div>
+  <!-- group icons-->
+  <div class="group-icons group-icons--vertical">
+    <a href="">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-pinterest"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-facebook-f"></i>
+    </a>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -744,6 +801,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/navbar.js"></script>
   <script src="assets/js/slider.js"></script>

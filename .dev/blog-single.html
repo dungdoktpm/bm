@@ -17,8 +17,59 @@
 
 <body>
   <div class="container">
-    <header class="header">
+    <!-- header -->
+    <header class="header mb-48">
+      <nav class="navbar">
+        <a class="logo" href="#">
+          <img src="./assets/images/BM.png" alt="logo" />
+        </a>
 
+        <button class="navbar__toggler btn--open">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!--menu-->
+        <div class="navbar__collapse">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="about.html" class="navbar__link">About</a>
+              <!-- sub menu -->
+              <ul class="sub-menu">
+                <li><a href="service.html" class="sub-menu__link">Service</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="portfolio.html" class="navbar__link">Portfolio</a>
+              <!-- sub menu -->
+              <ul class="sub-menu">
+                <li><a href="" class="sub-menu__link">Portflio Grid</a></li>
+                <li><a href="" class="sub-menu__link">Portflio MasonrySingle Project</a></li>
+                <li><a href="portfolio-detail.html" class="sub-menu__link">Portflio Detail</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="blog.html" class="navbar__link">Blog</a>
+              <!-- sub menu -->
+              <ul class="sub-menu">
+                <li><a href="blog-single.html" class="sub-menu__link">Blog Single</a></li>
+                <li><a href="blg-standard.html" class="sub-menu__link">Blog Standard</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+          </ul>
+          <div class="search">
+            <div class="search__main">
+              <input type="text" class="search__text" placeholder="Search...">
+              <a href="" class="search__btn btn"><i class="pe-7s-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- banner -->
     <section>
@@ -30,7 +81,7 @@
               <ol class="breadcrumb">
                 <li class="breadcrumb__item"><a href="#">Home</a></li>
                 <li class="breadcrumb__item"><a href="#">Blog</a></li>
-                <li class="breadcrumb__item active" aria-current="page"><a>Sevice</a></li>
+                <li class="breadcrumb__item active" aria-current="page"><a>Blog Single</a></li>
               </ol>
             </nav>
           </div>

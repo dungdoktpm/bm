@@ -1,8 +1,15 @@
+//home page
+// 1. menu
+.header .search {
+  right: 0;
+}
+// 1. section intro
 .intro {
   max-width: 92rem;
 }
 
-// home-
+// 2. section home
+// home
 .home {
   position: relative;
   .category {
@@ -18,6 +25,7 @@
     bottom: 0;
     left: 10%;
     transform: translateY(50%);
+    z-index: 2;
   }
 }
 .home .title--home {
@@ -27,49 +35,53 @@
   padding:6.5rem 7.7rem;
   max-width: 70rem;
 }
-.home .dots-container {
+//slide home
+.home .swiper-pagination.swiper-pagination-bullets{
   position: absolute;
   bottom: 0;
   right: 0;
+  left: auto;
   transform: rotate(90deg);
-  padding: 7.9rem;
-
+  width: max-content;
+  padding: 7.8rem;
 }
-// home-gallery
+
+// 3. section home-gallery
 .home-gallery {
   position: relative;
   margin-bottom: 19rem;
-  .slide {
+  .swiper-container {
     max-width: 97rem;
     margin: auto;
   }
-  .slide::after {
+  .home-gallery__inner::after {
     content: "";
-    width: 130%;
-    height: 100%;
-    background-color:$color-bg02 ;
+    width: 99%;
+    height: 89%;
+    background-color: #F6F6F6;
     position: absolute;
     top: 0%;
     left: 50%;
-    transform: translate(-50%, 30%);
+    transform: translate(-50%, 26%);
     z-index: -2;
   }
-  .slide::before {
+  .home-gallery__inner::before {
     content: "";
-    width: 116%;
-    height: 100%;
+    width: 87%;
+    height: 90%;
     background-color:$color-bg ;
     position: absolute;
     top: 0%;
     left: 50%;
-    transform: translate(-50%, 15%);
+    transform: translate(-50%, 13%);
     z-index: -1;
   }
   .home-gallery__desc {
     max-width: 48rem;
-    margin-top: 3rem;
+    padding-top: 3rem;
     font-weight: $font-bold;
     color: $color-dark;
+    padding-bottom: 3rem;
   }
   .category {
     letter-spacing: 3px;
@@ -93,55 +105,79 @@
     border: 1px solid $color-quaternary;
     transform: translate(-145%, -50%);
   }
+  //slide home-gallery
+  .swiper-pagination {
+    font-family: $font-secondary;
+    font-size: 24px;
+    line-height: 26px;
+    position: absolute;
+    bottom: 2.2rem;
+    right: 2.2rem;
+    left: auto;
+    width: max-content;
+    span.swiper-pagination-current {
+      font-size: 48px;
+      color: $color-secondary;
+    }
+  }
+  // button next & prev
+  .swiper-button {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 2.2rem;
+    z-index: 2;
+    width: max-content;
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      content: "";
+    }
+  }
+
+  .prev, .next {
+    font-size: 36px;
+    color: $color-light;
+    transition: all 0.6s ease;
+  }
+  .prev {
+    transform: rotate(180deg);
+    display: inline-block;
+  }
+  .next {
+    left: 4rem;
+  }
+  .active {
+    color: $color-secondary;
+  }
 }
 
-// home post
-.home-post, .service-slide {
+// 4. section home post
+.home-post {
   .slide-container {
     display: flex;
     align-items: center;
     flex-direction: row;
-    .dots-container {
-      transform: rotate(90deg);
-    }
   }
-  .slide {
-    flex:1;
+  .slide__content {
+    width: 100%;
   }
 }
+.home-post .swiper-pagination.swiper-pagination-bullets ,
+ .service-slide .swiper-pagination.swiper-pagination-bullets {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%) rotate(90deg);
+  width: max-content;
+}
 
-//form-reply
+// 5. section form-reply
 section.form-reply {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-//servive
-.service-slide {
-  .slide {
-    max-width: 95rem;
-    margin: auto;
-  }
-  .main-content {
-    display: flex;
-    align-items: center;
-    img {
-      max-width: 25rem;
-      border-radius: 50%;
-    }
-  }
-  .main-content > div {
-    padding-left: 4.8rem;
-  }
-  .title {
-    padding: 0;
-    margin-bottom: 3.4rem;
-    .title__heading {
-      font-size: 20px;
-      letter-spacing: 0.2rem;
-    }
-  }
-}
 
+// 6. section gallery
 //home-gallery-menu
 .gallery-menu {
   display: flex;
@@ -166,11 +202,15 @@ section.form-reply {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     position: relative;
+    // transition: all 0.6s ease;
+  }
+  &__item:hover {
+    cursor: pointer;
   }
   .active {
     color: $color-dark;
   }
-  &__item.active::after {
+  &__item.active::after, &__item:hover::after {
     content: "";
     width: 20px;
     height: auto;
@@ -178,8 +218,10 @@ section.form-reply {
     position: absolute;
     top: 30%;
     left: -20%;
+    cursor: pointer;
   }
 }
+//gallery container
 .gallery-container {
   flex: 1;
   display: flex;

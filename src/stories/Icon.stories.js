@@ -18,6 +18,6 @@ export const IconRibbon = () => {
 
 export const FaceBook = () => {
   return /* html */ `
-    <i class=" fab fa-facebook-f icon__share active center"></i>
+    <i class=" fab fa-facebook-f icon__share icon__share--facebook active center"></i>
   `;
 };

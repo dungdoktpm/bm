@@ -1,13 +1,13 @@
 .title {
   padding: 1.5rem 5rem;
   position: relative;
-  .title__heading {
-    font-size: 48px;
-    font-weight: $font-bold;
-    margin-bottom: 0.6rem;
-  }
 }
 
+.title__heading {
+  font-size: 48px;
+  font-weight: $font-bold;
+  margin-bottom: 0.6rem;
+}
 .title--style01 {
   color: $color-light;
   .title__heading {

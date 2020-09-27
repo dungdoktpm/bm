@@ -1,0 +1,29 @@
+// serivce-page
+// 1. section service
+.service-slide {
+  .swiper-wrapper, .swiper-slide {
+
+    margin: auto;
+  }
+  .slide__content {
+    display: flex;
+    align-items: center;
+    padding-right: 17rem;
+    padding-left: 15rem;
+    img {
+      max-width: 25rem;
+      border-radius: 50%;
+    }
+  }
+  .slide__content> div {
+    padding-left: 4.8rem;
+  }
+  .title {
+    padding: 0;
+    margin-bottom: 3.4rem;
+    .title__heading {
+      font-size: 20px;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
